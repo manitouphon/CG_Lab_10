@@ -34,6 +34,6 @@ void generateBitmapString(string text, float x, float y)
     }
 
     glEnd();
-    glFlush();
+   
 }
 
