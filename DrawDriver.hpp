@@ -163,6 +163,15 @@ private:
 
 public:
 
+
+
+
+//TODO: Fix
+void mouse(int button , int state , int mouseX, int mouseY){
+    
+    glutPostRedisplay();
+}
+
     void generateRandomLine(int lineID){
         string label = to_string(lineID);
         //int randNum = rand()%(max-min + 1) + min;
@@ -170,6 +179,7 @@ public:
         w = winWidth/2 - 20;
         h = winHeight/2 - 20;
         
+
         int x1 = rand()%(w-(-w) + 1) + (-w);
         int y1 = rand()%(h-(-h) + 1) + (-h);
         int x2 = rand()%(w-(-w) + 1) + (-w);
